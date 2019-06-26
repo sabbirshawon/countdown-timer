@@ -1,0 +1,84 @@
+$center: center;
+$white: #ffffff;
+$left: left;
+$upCase: uppercase;
+
+body{
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/167792/mountains_copy.jpg') no-repeat center center fixed;
+    background-size: cover;
+    transform: scale(1.1);
+}
+h1{
+  text-align: $center;
+  font-size: 74px;
+  letter-spacing: 10px;
+  color: $white;
+  text-shadow:
+     3px 3px 0 #000,
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+#del-countdown{
+    width: 100%;
+    margin: 15% auto;
+}
+#clock span{
+    float: $left;
+    text-align: $center;
+    font-size: 84px;
+    margin: 0 2.5%;
+    color: $white;
+    padding: 20px;
+    width: 20%;
+    border-radius: 20px;
+    box-sizing: border-box;; 
+    font-family: bold 52px Helvetica, Arial, Sans-Serif;
+   text-shadow: 1px 1px #535353, 
+                2px 2px #535353, 
+                3px 3px #535353;
+}
+
+#clock span:nth-child(1){
+    background: #822b1a;
+}
+
+#clock span:nth-child(2){
+    background: #26c2b9;
+}
+
+#clock span:nth-child(3){
+    background: #87500d;
+}
+
+#clock span:nth-child(4){
+    background: #2dcb74;
+}
+
+#clock:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #units span{
+    float: $left;
+    width: 25%;
+    text-align: $center;
+    margin-top: 30px;
+    color: $white;
+    text-transform: $upCase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+  }
+  
+  span.turn{
+    animation: turn 0.7s ease forwards;
+  }
+  
+  @keyframes turn{
+    0%{transform: rotateX(0deg)}
+    100%{transform: rotateX(360deg)}
+  }
