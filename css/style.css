@@ -10,7 +10,11 @@ h1 {
   font-size: 74px;
   letter-spacing: 10px;
   color: #ffffff;
-  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000,   1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: 3px 3px 0 #000,
+ -1px -1px 0 #000,  
+ 1px -1px 0 #000,
+ -1px 1px 0 #000,
+ 1px 1px 0 #000;
 }
 
 #del-countdown {
@@ -30,7 +34,9 @@ h1 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: bold 52px Helvetica, Arial, Sans-Serif;
-  text-shadow: 1px 1px #535353,  2px 2px #535353,  3px 3px #535353;
+  text-shadow: 1px 1px #535353, 
+ 2px 2px #535353, 
+ 3px 3px #535353;
 }
 
 #clock span:nth-child(1) {
